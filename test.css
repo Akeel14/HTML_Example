@@ -1,0 +1,32 @@
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  padding-left: 10px;
+}
+
+.main-nav li a {
+  text-decoration: none;
+}
+
+.main-nav li a:hover {
+  color: yellow;
+}
+
+#unique-table th,
+td {
+  border: 1px solid;
+}
+
+
+/* .main-nav-2 {
+  background-color: purple;
+}
+
+#main-nav-3 {
+  background-color: brown;
+} */

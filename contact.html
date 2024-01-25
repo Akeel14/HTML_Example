@@ -6,6 +6,138 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Contact Us</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/attractions.html">Attractions</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="https://httpbin.org/post" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="firstName" style="color: blue">First Name*:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="First Name"
+            required
+          />
+          <br />
+          <div style="padding-top: 20px">
+            <label for="LastName" style="color: blue">Last Name*:</label>
+            <input
+              type="text"
+              name="LastName"
+              id="LastName"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+
+          <div style="padding-top: 20px">
+            <label for="password">Password*:</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div style="padding-top: 20px">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="5555555555"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Text Area</legend>
+          <textarea
+            name="message"
+            id="message"
+            cols="100"
+            rows="5"
+            placeholder="Please enter a message"
+            required
+          ></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Checkbox</legend>
+          <p>Do you have pets?</p>
+
+          <div>
+            <label for="dog">Dog:</label>
+            <input type="checkbox" name="dog" id="dog" />
+          </div>
+
+          <div>
+            <label for="cat">Cat:</label>
+            <input type="checkbox" name="cat" id="cat" />
+          </div>
+
+          <div>
+            <label for="fish">Fish: </label>
+            <input type="checkbox" name="fish" id="fish" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Radio Button</legend>
+          <p>What is your fav food?</p>
+
+          <div>
+            <label for="pizza">Pizza:</label>
+            <input type="radio" name="food" id="pizza" value="pizza" />
+          </div>
+
+          <div>
+            <label for="tacos">Tacos:</label>
+            <input type="radio" name="food" id="tacos" value="tacos" />
+          </div>
+
+          <div>
+            <label for="other">Other:</label>
+            <input type="radio" name="food" id="other" value="other" />
+          </div>
+
+          <div>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Option Group</legend>
+
+          <select name="coffee" id="coffee">
+            <option value="regular coffee">Regular Coffee</option>
+            <option value="iced coffee">Iced Coffee</option>
+            <option value="Latte">Latte</option>
+            <option value="Cappuccino">Cappuccino</option>
+            <option value="Cortado">Cortado</option>
+            <option value="americano">americano</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <footer></footer>
   </body>
 </html>
